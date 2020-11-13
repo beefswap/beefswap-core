@@ -6,8 +6,8 @@ import './libraries/SafeMath.sol';
 contract BeefswapV2ERC20 is IBeefswapV2ERC20 {
     using SafeMath for uint;
 
-    string public constant name = 'Beefswap V2';
-    string public constant symbol = 'BEEF-V2';
+    string public constant name = 'Beefswap';
+    string public constant symbol = 'BEEF';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;

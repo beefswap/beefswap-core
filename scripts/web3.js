@@ -8,7 +8,7 @@ var data = fs.readFileSync("./artifacts/contracts/BeefswapV2Factory.sol/Beefswap
 
 
 //创建合约对象
-var contract = new web3.eth.Contract(JSON.parse(data).abi,'0x1594E54b85F4BAd743F6613bd1215A4b6a4178Be');
+var contract = new web3.eth.Contract(JSON.parse(data).abi,'0xCb215e589136b246D54B7135C03FCA94338aE418');
 
 //调用合约的方法
 contract.methods.INIT_CODE_PAIR_HASH().call().then(console.log);

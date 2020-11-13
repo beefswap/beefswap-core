@@ -15,11 +15,14 @@ async function main() {
 
   // We get the contract to deploy
   const Greeter = await hre.ethers.getContractFactory("BeefswapV2Factory");
+
+  console.log("=======================+"+Greeter.INIT_CODE_PAIR_HAS);
   const greeter = await Greeter.deploy('0xcbbC0f3B89D4e57bc2fdED06D063F8aE885bb05B');
 
   await greeter.deployed();
 
   console.log("Greeter deployed to:", greeter.address);
+  console.log("Greeter INIT_CODE_PAIR_HAS is:",  greeter.);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

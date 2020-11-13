@@ -1,7 +1,7 @@
 {
   "name": "@beefswap/core",
   "description": "🎛 Core contracts for the Beefswap protocol",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "homepage": "https://beefswap.org",
   "repository": {
     "type": "git",

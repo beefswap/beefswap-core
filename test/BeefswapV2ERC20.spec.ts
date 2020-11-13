@@ -29,8 +29,8 @@ describe('BeefswapV2ERC20', () => {
 
   it('name, symbol, decimals, totalSupply, balanceOf, DOMAIN_SEPARATOR, PERMIT_TYPEHASH', async () => {
     const name = await token.name()
-    expect(name).to.eq('Beefswap V2')
-    expect(await token.symbol()).to.eq('BEEF-V2')
+    expect(name).to.eq('Beefswap')
+    expect(await token.symbol()).to.eq('BEEF')
     expect(await token.decimals()).to.eq(18)
     expect(await token.totalSupply()).to.eq(TOTAL_SUPPLY)
     expect(await token.balanceOf(wallet.address)).to.eq(TOTAL_SUPPLY)
